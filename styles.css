@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Lucida Grande", "sans-serif";
+	font-size: 4em; 
+	color: white;
+}
+
+.parallax_wrapper {
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 300px;
+}
+
+.intro_screen {
+	height: 100vh;
+	background-color: tomato;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outro_screen {
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax_group {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	transform-style: preserve-3d;
+}
+
+.parallax_layer {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#intro {
+    z-index: 0;
+	background-image: url("images/computer.jpg");
+	background-size: cover;
+}
+
+#vid {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	right: 0;
+	left: 0;
+}
+
+
+h1 {
+	position: relative; 
+	color: white; 
+	text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+	text-align: center;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+#group-1 {
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+#group-1 > .base_layer {
+	background-image: url("images/stuck.jpg");
+	background-size: cover;
+}
+
+#group-1 > .mid_layer {
+	
+}
+
+.base_layer {
+	transform: translateZ(-300px) scale(2);
+}
+
+#group-2 {
+	height: 100vh;
+	width: 100%;
+}
+
+#group-2 > .mid_layer {
+	background-image: url("images/scientist.jpg");
+	background-size: cover;
+}
+
+.mid_layer {
+	transform: translateZ(0px);
+}
+
+.top_layer{
+	transform: translateZ(210px) scale(0.3);
+}
+
+#outro {
+	
+}
+
+#submit {
+	background-color: black;
+	text-align: center;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+#group-3 {
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+#group-3 > .base_layer {
+	background-image: url("images/trophies.jpg");
+	background-size: cover;
+}
+
+#group-4 {
+	height: 100vh;
+	width: 100%;
+}
+
+#group-4 > .mid_layer {
+	background-image: url("images/computer.jpg");
+	background-size: cover;
+}
+
+#group-5 {
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+#group-5 > .base_layer {
+	background-image: url("images/smallerred.jpg");
+}
+
+#group-6 {
+	height: 100vh;
+	width: 100%;
+}
+
+#group-6 > .mid_layer {
+	background-image: url("images/glitchscreen.jpg");
+}
+
+#group-7 {
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+#group-7 > .base_layer {
+	background-color: black;
+}
+
+#group-7 > .mid_layer {
+	
+}
+
+#group-8 {
+	height: 100vh;
+	width: 100%;
+}
+
+#group-8 > .mid_layer {
+	
+}
+
+.container {
+	width: 1000px;
+	padding-right: 50px;
+}
+
+p {
+	font-family: "Lucida Grande", "sans-serif";
+	font-size: 48px;
+	padding-left: 50px;
+}
